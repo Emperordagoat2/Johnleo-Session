@@ -5,7 +5,15 @@
   <title>𝐉𝐎𝐇𝐍𝐋𝐄𝐎-𝐌𝐃 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐒𝐈𝐓𝐄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    <body style="background-image: url('background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: black;
+    } 
 
     .btn {
       --color: #e5f5f1;
@@ -64,9 +72,17 @@
       filter: brightness(.7);
       transform: scale(.98);
     }
+
+    .logo {
+      width: 200px; /* Adjust size as needed */
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Add your image here -->
+  <img src="/storage/emulated/0/Johnleo-Sessions/" alt="Site Logo" class="logo">
 
   <button onclick="window.open(`/qr`)" class="btn">𝐉𝐎𝐇𝐍𝐋𝐄𝐎-𝐌𝐃 𝐐𝐑</button>
   <button onclick="window.open(`/pair`)" class="btn">𝐉𝐎𝐇𝐍𝐋𝐄𝐎-𝐌𝐃 𝐏𝐀𝐈𝐑</button>
@@ -76,5 +92,6 @@
   <button onclick="window.open(`https://www.youtube.com/@JohnleoTech`)" class="btn">𝐘𝐎𝐔𝐓𝐔𝐁𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋</button>
   <button onclick="window.open(`https://t.me/JohnleoTech`)" class="btn">𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋</button>
   <button onclick="window.open(`https://github.com/johnleosmith`)" class="btn">𝐆𝐈𝐓𝐇𝐔𝐁 𝐀𝐂𝐂𝐎𝐔𝐍𝐓</button>
+
 </body>
 </html>
