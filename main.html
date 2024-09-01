@@ -5,15 +5,32 @@
   <title>𝐉𝐎𝐇𝐍𝐋𝐄𝐎-𝐌𝐃 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐒𝐈𝐓𝐄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Roboto', 'Segoe UI', sans-serif;
+    }
+
+    .background-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    .container {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background-color: black;
-    }
+      height: 100%;
+      position: relative;
+    } 
 
     .btn {
       --color: #e5f5f1;
@@ -30,7 +47,6 @@
       z-index: 1;
       font-weight: 300;
       font-size: 17px;
-      font-family: 'Roboto', 'Segoe UI', sans-serif;
       text-transform: uppercase;
       color: var(--color);
       margin-bottom: 24px;
@@ -72,26 +88,22 @@
       filter: brightness(.7);
       transform: scale(.98);
     }
-
-    .logo {
-      width: 200px; /* Adjust size as needed */
-      margin-bottom: 20px;
-    }
   </style>
 </head>
 <body>
 
-  <!-- Updated image path -->
-  <img src="https://telegra.ph/file/ee73167f14236e3216935.jpg" alt="Site Logo" class="background">
+  <div class="https://telegra.ph/file/ee73167f14236e3216935.jpg"></div>
 
-  <button onclick="window.open(`/qr`)" class="btn">𝐉𝐎𝐇𝐍𝐋𝐄𝐎-𝐌𝐃 𝐐𝐑</button>
-  <button onclick="window.open(`/pair`)" class="btn">𝐉𝐎𝐇𝐍𝐋𝐄𝐎-𝐌𝐃 𝐏𝐀𝐈𝐑</button>
-  <button onclick="window.open(`https://wa.me/2348027387246`)" class="btn">𝐉𝐎𝐇𝐍𝐋𝐄𝐎 𝐓𝐄𝐂𝐇</button>
-  <button onclick="window.open(`https://whatsapp.com/channel/0029VamlYh41SWssaEvw4E2i`)" class="btn">𝐘𝐎𝐔𝐓𝐔𝐁𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋</button>
-  <button onclick="window.open(`https://chat.whatsapp.com/GkOeZ2eLZhx6lenAq1z83o`)" class="btn">𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐆𝐑𝐎𝐔𝐏</button>
-  <button onclick="window.open(`https://www.youtube.com/@JohnleoTech`)" class="btn">𝐘𝐎𝐔𝐓𝐔𝐁𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋</button>
-  <button onclick="window.open(`https://t.me/JohnleoTech`)" class="btn">𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋</button>
-  <button onclick="window.open(`https://github.com/johnleosmith`)" class="btn">𝐆𝐈𝐓𝐇𝐔𝐁 𝐀𝐂𝐂𝐎𝐔𝐍𝐓/button>
+  <div class="container">
+    <button onclick="window.open(`/qr`)" class="btn">𝐉𝐎𝐇𝐍𝐋𝐄𝐎-𝐌𝐃 𝐐𝐑</button>
+    <button onclick="window.open(`/pair`)" class="btn">𝐉𝐎𝐇𝐍𝐋𝐄𝐎-𝐌𝐃 𝐏𝐀𝐈𝐑</button>
+    <button onclick="window.open(`https://wa.me/2348027387246`)" class="btn">𝐉𝐎𝐇𝐍𝐋𝐄𝐎 𝐓𝐄𝐂𝐇</button>
+    <button onclick="window.open(`https://whatsapp.com/channel/0029VamlYh41SWssaEvw4E2i`)" class="btn">𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐂𝐇𝐀𝐍𝐍𝐄𝐋</button>
+    <button onclick="window.open(`https://chat.whatsapp.com/GkOeZ2eLZhx6lenAq1z83o`)" class="btn">𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐆𝐑𝐎𝐔𝐏</button>
+    <button onclick="window.open(`https://www.youtube.com/@JohnleoTech`)" class="btn">𝐘𝐎𝐔𝐓𝐔𝐁𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋</button>
+    <button onclick="window.open(`https://t.me/JohnleoTech`)" class="btn">𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋</button>
+    <button onclick="window.open(`https://github.com/johnleosmith`)" class="btn">𝐆𝐈𝐓𝐇𝐔𝐁 𝐀𝐂𝐂𝐎𝐔𝐍𝐓</button>
+  </div>
 
 </body>
 </html>
